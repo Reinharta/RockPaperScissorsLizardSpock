@@ -22,7 +22,7 @@ namespace RockPaperScissors
             if (numOfPlayers == "1")
             {
                 player1 =
-                object ComputerPlayer player2 = new ComputerPlayer();
+                object player2;
             }
             if (numOfPlayers == "2")
             {

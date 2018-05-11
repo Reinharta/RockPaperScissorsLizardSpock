@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    public class HumanPlayer : Player
+    class HumanPlayer2 : HumanPlayer
     {
-        List<string> moveList = new List<string>();
-        moveList.Add("Rock");
 
     }
 }
