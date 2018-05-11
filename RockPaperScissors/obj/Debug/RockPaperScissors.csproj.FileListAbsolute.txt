@@ -1,0 +1,2 @@
+C:\Users\Anina\Desktop\VSProjects\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.csprojResolveAssemblyReference.cache
+C:\Users\Anina\Desktop\VSProjects\RockPaperScissors\RockPaperScissors\obj\Debug\RockPaperScissors.csproj.CoreCompileInputs.cache
