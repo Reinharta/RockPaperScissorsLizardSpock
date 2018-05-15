@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,8 @@ namespace RockPaperScissors
 {
     public class HumanPlayer : Player
     {
-        List<string> moveList = new List<string>();
-        moveList.Add("Rock");
+
+
 
     }
 }

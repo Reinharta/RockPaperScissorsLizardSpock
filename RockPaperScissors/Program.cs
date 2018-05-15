@@ -10,6 +10,10 @@ namespace RockPaperScissors
     {
         static void Main(string[] args)
         {
+            PlayerCreation startGame = new PlayerCreation();
+            startGame.GetNumPlayers();
+
+            Console.ReadLine();
         }
     }
 }

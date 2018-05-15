@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    class HumanPlayer2 : HumanPlayer
+    class HumanPlayer2 : Player
     {
 
     }
