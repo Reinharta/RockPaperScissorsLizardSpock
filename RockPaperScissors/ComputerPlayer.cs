@@ -10,7 +10,7 @@ namespace RockPaperScissors
     {
         public Random random = new Random();
 
-        public override void DisplayMoves()
+        public override void DisplayMoves(string playerName)
         {
 
         }

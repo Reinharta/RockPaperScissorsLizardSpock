@@ -8,20 +8,22 @@ namespace RockPaperScissors
 {
     public abstract class Player
     {
+        public string playerName;
         public string move;
         public int turnNum = 0;
         public int moveValue;
         public int wins = 0;
 
-        public virtual void DisplayMoves()
+        public virtual void DisplayMoves(string playerName)
         {
+            this.playerName = playerName;
             List<string> moveList = new List<string>();
             moveList.Add("Rock");
             moveList.Add("Paper");
             moveList.Add("Scissors");
             moveList.Add("Spock");
             moveList.Add("Lizard");
-            Console.WriteLine("\nPlease choose your move from the list below.\n");
+            Console.WriteLine("\n" + playerName + ", please choose your move from the list below.\n");
             moveList.ForEach(Console.WriteLine);
             GetMove(moveList);
         }
@@ -43,7 +45,7 @@ namespace RockPaperScissors
             else
             {
                 Console.WriteLine("\nYou have entered an invalid selection. Please try again.\n");
-                DisplayMoves();
+                DisplayMoves(playerName);
             }
         }
 

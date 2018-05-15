@@ -31,9 +31,9 @@ namespace RockPaperScissors
         
         public void GetRoundMoves()
         {
-            playerOne.DisplayMoves();
+            playerOne.DisplayMoves(pOneName);
             pOneMoveVal = playerOne.moveValue;
-            playerTwo.DisplayMoves();
+            playerTwo.DisplayMoves(pTwoName);
             pTwoMoveVal = playerTwo.moveValue;
             AssessMoves();
         }
