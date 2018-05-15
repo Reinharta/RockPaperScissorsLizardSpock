@@ -25,7 +25,7 @@ namespace RockPaperScissors
         {
             switch (numOfPlayers) {
                 case "1":
-                        Console.WriteLine("Please enter Player Name.");
+                        Console.WriteLine("\nPlease enter Player Name.\n");
                         p1Name = Console.ReadLine();
                         player1 = new HumanPlayer();
                         p2Name = "Computer";
@@ -35,10 +35,10 @@ namespace RockPaperScissors
                     break;
 
                 case "2":
-                        Console.WriteLine("Please enter Player 1 Name.");
+                        Console.WriteLine("\nPlease enter Player 1 Name.\n");
                         p1Name = Console.ReadLine();
                         player1 = new HumanPlayer();
-                        Console.WriteLine("Please enter Player 2 Name.");
+                        Console.WriteLine("\nPlease enter Player 2 Name.\n");
                         p2Name = Console.ReadLine();
                         player2 = new HumanPlayer2();
                         GamePlay playGameTwoPlayer = new GamePlay(player1, p1Name, player2, p2Name);
@@ -46,7 +46,7 @@ namespace RockPaperScissors
                     break;
 
                 default:
-                        Console.WriteLine("You entered an invalid selection. Please try again.");
+                        Console.WriteLine("\nYou entered an invalid selection. Please try again.\n");
                         GetNumPlayers();
                         break;
 

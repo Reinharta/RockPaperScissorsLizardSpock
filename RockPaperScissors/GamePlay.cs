@@ -64,7 +64,7 @@ namespace RockPaperScissors
                     roundWinner = null;
                     break;
                 default:
-                    Console.WriteLine("Something went wrong. Please exit and restart.");
+                    Console.WriteLine("\nSomething went wrong. Please exit and restart.\n");
                     break;
 
             }
@@ -76,7 +76,7 @@ namespace RockPaperScissors
             }
             if (roundWinner == null)
             {
-                Console.WriteLine("It's a tie!");
+                Console.WriteLine("\nIt's a tie!");
                 AssessRounds();
             }
 
@@ -84,7 +84,7 @@ namespace RockPaperScissors
 
         public void DisplayWinner()
         {
-            Console.WriteLine(roundWinnerName + " won this round!");
+            Console.WriteLine("\n"+roundWinnerName + " won this round!");
             AssessRounds();
 
         }
@@ -105,11 +105,11 @@ namespace RockPaperScissors
         {
             if(playerOne.wins > playerTwo.wins)
             {
-                Console.WriteLine(pOneName + " wins best out of three! Congratulations, " + pOneName+ "!");
+                Console.WriteLine("\n" + pOneName + " wins best out of three! Congratulations, " + pOneName+ "!");
             }
             if(playerOne.wins < playerTwo.wins)
             {
-                Console.WriteLine(pTwoName + " wins best out of three! Congratulations, " + pTwoName+"!");
+                Console.WriteLine("\n" + pTwoName + " wins best out of three! Congratulations, " + pTwoName+"!");
             }
         }
 

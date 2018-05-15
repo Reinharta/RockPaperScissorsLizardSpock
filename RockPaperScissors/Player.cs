@@ -21,18 +21,40 @@ namespace RockPaperScissors
             moveList.Add("Scissors");
             moveList.Add("Spock");
             moveList.Add("Lizard");
-            Console.WriteLine("Please choose your move from the list below.");
+            Console.WriteLine("\nPlease choose your move from the list below.\n");
             moveList.ForEach(Console.WriteLine);
             GetMove(moveList);
         }
 
         public virtual void GetMove(List<string> moveList)
         {
-            move = Console.ReadLine();
+            move = (Console.ReadLine().ToLower());
+            move = UpperFirstLetter(move);
             moveValue = moveList.IndexOf(move);
-            MakeMove(move, moveValue);
+            ValidateMove(move, moveList);
         }
-        
+
+        private void ValidateMove(string move, List<string> moveList)
+        {
+            if (moveList.Contains(move))
+            {
+                MakeMove(move, moveValue);
+            }
+            else
+            {
+                Console.WriteLine("\nYou have entered an invalid selection. Please try again.\n");
+                DisplayMoves();
+            }
+        }
+
+        public virtual string UpperFirstLetter(string s)
+        {
+            if (string.IsNullOrEmpty(s))
+            {
+                return string.Empty;
+            }
+            return char.ToUpper(s[0]) + s.Substring(1);
+        }
 
         public int MakeMove(string move, int moveValue)
         {
