@@ -61,7 +61,6 @@ namespace RockPaperScissors
         public int MakeMove(string move, int moveValue)
         {
             turnNum++;
-
             return moveValue; 
         }
 
